@@ -11,8 +11,8 @@ import UIKit
 
 class CustomTableCell: UITableViewCell {
     
-    var mTitle : String = "test"
-        
+    var mTitle : String?
+    
     @IBOutlet weak var cellTxt: UILabel!
     
     override func awakeFromNib() {
@@ -22,16 +22,16 @@ class CustomTableCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        cellTxt.text = mTitle
-//        if let title = mTitle{
-//
-//        }
+        
+        if let title = mTitle{
+            cellTxt.text = title
+        }
         
     }
-
+    
     override func layoutSubviews() {
         selectionStyle = .none
-     
+        
     }
-
+    
 }

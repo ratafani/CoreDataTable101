@@ -16,6 +16,7 @@
 		F641DADA24E21F600003F840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F641DAD824E21F600003F840 /* LaunchScreen.storyboard */; };
 		F641DAE324E2207B0003F840 /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F641DAE224E2207B0003F840 /* CustomTable.swift */; };
 		F641DAE524E220880003F840 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F641DAE424E220880003F840 /* CustomTableCell.swift */; };
+		F641DAE724E244E70003F840 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F641DAE624E244E70003F840 /* CDManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F641DADB24E21F600003F840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F641DAE224E2207B0003F840 /* CustomTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
 		F641DAE424E220880003F840 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		F641DAE624E244E70003F840 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F641DACA24E21F5E0003F840 /* AppDelegate.swift */,
 				F641DACC24E21F5E0003F840 /* SceneDelegate.swift */,
 				F641DACE24E21F5E0003F840 /* ViewController.swift */,
+				F641DAE624E244E70003F840 /* CDManager.swift */,
 				F641DAD024E21F5E0003F840 /* Main.storyboard */,
 				F641DAD624E21F600003F840 /* Assets.xcassets */,
 				F641DAD824E21F600003F840 /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				F641DACF24E21F5E0003F840 /* ViewController.swift in Sources */,
 				F641DACB24E21F5E0003F840 /* AppDelegate.swift in Sources */,
 				F641DAE324E2207B0003F840 /* CustomTable.swift in Sources */,
+				F641DAE724E244E70003F840 /* CDManager.swift in Sources */,
 				F641DAD524E21F5E0003F840 /* CoreDataTable101.xcdatamodeld in Sources */,
 				F641DACD24E21F5E0003F840 /* SceneDelegate.swift in Sources */,
 				F641DAE524E220880003F840 /* CustomTableCell.swift in Sources */,
