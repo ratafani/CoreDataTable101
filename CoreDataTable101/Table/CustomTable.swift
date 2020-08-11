@@ -25,7 +25,8 @@ extension CustomTable : UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableCell
-        customCell.mTitle = modelData[indexPath.row].name
+        customCell.mTitle = modelData[indexPath.row]
+        
         return customCell
     }
     

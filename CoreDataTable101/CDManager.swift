@@ -11,6 +11,7 @@ import CoreData
 
 struct DataModel{
     var name : String
+    var id : NSManagedObjectID
 }
 
 class CDManager:NSObject{
@@ -33,7 +34,7 @@ class CDManager:NSObject{
         }catch{
             print(error)
         }
-        listData.append(DataModel(name: name))
+        readData()
     }
     
     func readData(){
@@ -47,8 +48,9 @@ class CDManager:NSObject{
             }else{
                 for item in result as! [NSManagedObject]{
                     if let itemName = item.value(forKey: "name"){
-                        listData.append(DataModel(name: itemName as! String))
+                        listData.append(DataModel(name: itemName as! String, id: item.objectID))
                     }
+                    
                 }
             }
         }
@@ -73,11 +75,11 @@ class CDManager:NSObject{
         let context = appDel.persistentContainer.viewContext
         if let entity = context.registeredObject(for: id){
             context.delete(entity)
-        }
-        do{
-            try context.save()
-        }catch{
-            print(error)
+            do{
+                try context.save()
+            }catch{
+                print(error)
+            }
         }
     }
 }
